@@ -39,6 +39,7 @@ void loop()
 if (buttonEstat == HIGH)
      {
     buttonEstat2 = !buttonEstat2;
+    delay (1000);
     }
 
 if ( buttonEstat2 == LOW)     
@@ -165,7 +166,13 @@ if ( buttonEstat2 == LOW)
 
 else (buttonEstat2 == HIGH);
 {
-  
+  digitalWrite(5,1);    
+  digitalWrite(6,1);    
+  digitalWrite(7,1);    
+  digitalWrite(8,1);    
+  digitalWrite(9,1);    
+  digitalWrite(10,1);    
+  digitalWrite(11,1);
 }
   
 
