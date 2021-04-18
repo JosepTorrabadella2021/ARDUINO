@@ -141,8 +141,8 @@ void loop()
 
   else (buttonEstat == LOW);
     {
-  digitalWrite(5,0);    
-  digitalWrite(6,0);    
+  digitalWrite(5,1);    
+  digitalWrite(6,1);    
   digitalWrite(7,0);    
   digitalWrite(8,0);    
   digitalWrite(9,0);    

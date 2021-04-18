@@ -13,7 +13,7 @@ const int buttonPin = 2;             // donar nom al pin 2 de l’Arduino
 boolean buttonEstat = LOW;           // definir variable d'estat pel polsador
 unsigned long temps1=1000;
 int ledNum = 7;                   // definir variable de número de leds
-
+boolean buttonEstat2 = LOW;
 
 //********** Setup ****************************************************************
 void setup()
@@ -34,8 +34,15 @@ void setup()
 void loop()
 {
   
+   buttonEstat = digitalRead(buttonPin);
   
-   
+if (buttonEstat == HIGH)
+     {
+    buttonEstat2 = !buttonEstat2;
+    }
+
+if ( buttonEstat2 == LOW)     
+    { 
   digitalWrite(5,0);    
   digitalWrite(6,0);    
   digitalWrite(7,0);    
@@ -44,16 +51,6 @@ void loop()
   digitalWrite(10,0);    
   digitalWrite(11,0);   
 
- buttonEstat = digitalRead(buttonPin);
-  
-if (buttonEstat == HIGH)
-     {
-    temps1=30000;
-    }
-  else if (buttonEstat == LOW)     
-    { 
-  temps1=1000;
-     }   
 
   delay (temps1);
 
@@ -65,16 +62,7 @@ if (buttonEstat == HIGH)
   digitalWrite(10,0);    
   digitalWrite(11,0);
 
-  buttonEstat = digitalRead(buttonPin);
   
-if (buttonEstat == HIGH)
-     {
-    temps1=30000;
-    }
-  else if (buttonEstat == LOW)     
-    { 
-  temps1=1000;
-     }   
 
   delay (temps1);
 
@@ -86,16 +74,9 @@ if (buttonEstat == HIGH)
   digitalWrite(10,0);    
   digitalWrite(11,1);  
 
-  buttonEstat = digitalRead(buttonPin);
+ 
   
-if (buttonEstat == HIGH)
-     {
-    temps1=30000;
-    }
-  else if (buttonEstat == LOW)     
-    { 
-  temps1=1000;
-     }   
+
 
   delay (temps1);
 
@@ -107,16 +88,7 @@ if (buttonEstat == HIGH)
   digitalWrite(10,0);    
   digitalWrite(11,1);   
 
-buttonEstat = digitalRead(buttonPin);
-  
-if (buttonEstat == HIGH)
-     {
-    temps1=30000;
-    }
-  else if (buttonEstat == LOW)     
-    { 
-  temps1=1000;
-     }   
+
   
   delay (temps1);
 
@@ -128,17 +100,7 @@ if (buttonEstat == HIGH)
   digitalWrite(10,1);    
   digitalWrite(11,1);   
 
-  buttonEstat = digitalRead(buttonPin);
-  
-if (buttonEstat == HIGH)
-     {
-    temps1=30000;
-    }
-  else if (buttonEstat == LOW)     
-    { 
-  temps1=1000;
-     }   
-
+ 
   delay (temps1);
 
   digitalWrite(5,1);    
@@ -149,17 +111,7 @@ if (buttonEstat == HIGH)
   digitalWrite(10,1);    
   digitalWrite(11,1);   
 
-  buttonEstat = digitalRead(buttonPin);
   
-if (buttonEstat == HIGH)
-     {
-    temps1=30000;
-    }
-  else if (buttonEstat == LOW)     
-    { 
-  temps1=1000;
-     }   
-
   delay (temps1);
 
   digitalWrite(5,0);    
@@ -170,16 +122,7 @@ if (buttonEstat == HIGH)
   digitalWrite(10,1);    
   digitalWrite(11,1);   
 
-  buttonEstat = digitalRead(buttonPin);
   
-if (buttonEstat == HIGH)
-     {
-    temps1=30000;
-    }
-  else if (buttonEstat == LOW)     
-    { 
-  temps1=1000;
-     }   
 
   delay (temps1);
 
@@ -191,16 +134,7 @@ if (buttonEstat == HIGH)
   digitalWrite(10,0);    
   digitalWrite(11,0);   
 
-buttonEstat = digitalRead(buttonPin);
-  
-if (buttonEstat == HIGH)
-     {
-    temps1=30000;
-    }
-  else if (buttonEstat == LOW)     
-    { 
-  temps1=1000;
-     }   
+
   
   delay (temps1);
 
@@ -212,16 +146,7 @@ if (buttonEstat == HIGH)
   digitalWrite(10,1);    
   digitalWrite(11,1);   
 
-  buttonEstat = digitalRead(buttonPin);
   
-if (buttonEstat == HIGH)
-     {
-    temps1=30000;
-    }
-  else if (buttonEstat == LOW)     
-    { 
-  temps1=1000;
-     }   
 
   delay (temps1);
 
@@ -233,18 +158,16 @@ if (buttonEstat == HIGH)
   digitalWrite(10,1);    
   digitalWrite(11,1);   
 
-  buttonEstat = digitalRead(buttonPin);
-  
-if (buttonEstat == HIGH)
-     {
-    temps1=30000;
-    }
-  else if (buttonEstat == LOW)     
-    { 
-  temps1=1000;
-     }   
+ 
 
   delay (temps1);
+     }   
+
+else (buttonEstat2 == HIGH);
+{
+  
+}
+  
 
    
   

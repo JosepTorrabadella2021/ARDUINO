@@ -47,7 +47,7 @@ void loop()
 
   delay (temps1);
 
-  digitalWrite(ledA, HIGH);    
+  digitalWrite(ledA, LOW);    
   digitalWrite(ledB, HIGH);    
   digitalWrite(ledC, HIGH);    
   digitalWrite(ledD, HIGH);    
@@ -57,7 +57,7 @@ void loop()
 
   delay (temps1);
 
-  digitalWrite(ledA, HIGH);    
+  digitalWrite(ledA, LOW);    
   digitalWrite(ledB, LOW);    
   digitalWrite(ledC, HIGH);    
   digitalWrite(ledD, HIGH);    
@@ -67,7 +67,7 @@ void loop()
 
   delay (temps1);
 
-  digitalWrite(ledA, HIGH);    
+  digitalWrite(ledA, LOW);    
   digitalWrite(ledB, LOW);    
   digitalWrite(ledC, LOW);    
   digitalWrite(ledD, HIGH);    
@@ -77,7 +77,7 @@ void loop()
 
   delay (temps1);
 
-  digitalWrite(ledA, HIGH);    
+  digitalWrite(ledA, LOW);    
   digitalWrite(ledB, HIGH);    
   digitalWrite(ledC, LOW);    
   digitalWrite(ledD, LOW);    
