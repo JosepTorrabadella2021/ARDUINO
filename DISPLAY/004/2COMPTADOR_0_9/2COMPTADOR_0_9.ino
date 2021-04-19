@@ -33,150 +33,141 @@ void setup()
 //********** Loop *****************************************************************
 void loop()
 {
-  
-   buttonEstat = digitalRead(buttonPin);
-  
-if (buttonEstat == HIGH)
-     {
+  buttonEstat = digitalRead(buttonPin);
+  if (buttonEstat == HIGH)
+  {
     buttonEstat2 = !buttonEstat2;
-    delay (1000);
-    }
-
-if ( buttonEstat2 == LOW)     
-    { 
-  digitalWrite(5,0);    
-  digitalWrite(6,0);    
-  digitalWrite(7,0);    
-  digitalWrite(8,0);    
-  digitalWrite(9,0);    
-  digitalWrite(10,0);    
-  digitalWrite(11,0);   
-
-
-  delay (temps1);
-
-  digitalWrite(5,0);    
-  digitalWrite(6,1);    
-  digitalWrite(7,1);    
-  digitalWrite(8,0);    
-  digitalWrite(9,0);    
-  digitalWrite(10,0);    
-  digitalWrite(11,0);
-
+  }
+  if ( buttonEstat2 == LOW)     
+  { 
+    digitalWrite(5,0);    
+    digitalWrite(6,0);    
+    digitalWrite(7,0);    
+    digitalWrite(8,0);    
+    digitalWrite(9,0);    
+    digitalWrite(10,0);    
+    digitalWrite(11,0);   
   
-
-  delay (temps1);
-
-  digitalWrite(5,1);    
-  digitalWrite(6,1);    
-  digitalWrite(7,0);    
-  digitalWrite(8,1);    
-  digitalWrite(9,1);    
-  digitalWrite(10,0);    
-  digitalWrite(11,1);  
-
- 
   
-
-
-  delay (temps1);
-
-  digitalWrite(5,1);    
-  digitalWrite(6,1);    
-  digitalWrite(7,1);    
-  digitalWrite(8,1);    
-  digitalWrite(9,0);    
-  digitalWrite(10,0);    
-  digitalWrite(11,1);   
-
-
+    delay (temps1);
   
-  delay (temps1);
-
-  digitalWrite(5,0);    
-  digitalWrite(6,1);    
-  digitalWrite(7,1);    
-  digitalWrite(8,0);    
-  digitalWrite(9,0);    
-  digitalWrite(10,1);    
-  digitalWrite(11,1);   
-
- 
-  delay (temps1);
-
-  digitalWrite(5,1);    
-  digitalWrite(6,0);    
-  digitalWrite(7,1);    
-  digitalWrite(8,1);    
-  digitalWrite(9,0);    
-  digitalWrite(10,1);    
-  digitalWrite(11,1);   
-
+    digitalWrite(5,0);    
+    digitalWrite(6,1);    
+    digitalWrite(7,1);    
+    digitalWrite(8,0);    
+    digitalWrite(9,0);    
+    digitalWrite(10,0);    
+    digitalWrite(11,0);
   
-  delay (temps1);
-
-  digitalWrite(5,0);    
-  digitalWrite(6,0);    
-  digitalWrite(7,1);    
-  digitalWrite(8,1);    
-  digitalWrite(9,1);    
-  digitalWrite(10,1);    
-  digitalWrite(11,1);   
-
+    
   
-
-  delay (temps1);
-
-  digitalWrite(5,1);    
-  digitalWrite(6,1);    
-  digitalWrite(7,1);    
-  digitalWrite(8,0);    
-  digitalWrite(9,0);    
-  digitalWrite(10,0);    
-  digitalWrite(11,0);   
-
-
+    delay (temps1);
   
-  delay (temps1);
-
-  digitalWrite(5,1);    
-  digitalWrite(6,1);    
-  digitalWrite(7,1);    
-  digitalWrite(8,1);    
-  digitalWrite(9,1);    
-  digitalWrite(10,1);    
-  digitalWrite(11,1);   
-
+    digitalWrite(5,1);    
+    digitalWrite(6,1);    
+    digitalWrite(7,0);    
+    digitalWrite(8,1);    
+    digitalWrite(9,1);    
+    digitalWrite(10,0);    
+    digitalWrite(11,1);  
   
-
-  delay (temps1);
-
-  digitalWrite(5,1);    
-  digitalWrite(6,1);    
-  digitalWrite(7,1);    
-  digitalWrite(8,0);    
-  digitalWrite(9,0);    
-  digitalWrite(10,1);    
-  digitalWrite(11,1);   
-
- 
-
-  delay (temps1);
-     }   
-
-else (buttonEstat2 == HIGH);
-{
-  digitalWrite(5,1);    
-  digitalWrite(6,1);    
-  digitalWrite(7,1);    
-  digitalWrite(8,1);    
-  digitalWrite(9,1);    
-  digitalWrite(10,1);    
-  digitalWrite(11,1);
-}
+   
+    
   
-
+  
+    delay (temps1);
+  
+    digitalWrite(5,1);    
+    digitalWrite(6,1);    
+    digitalWrite(7,1);    
+    digitalWrite(8,1);    
+    digitalWrite(9,0);    
+    digitalWrite(10,0);    
+    digitalWrite(11,1);   
+  
+  
+    
+    delay (temps1);
+  
+    digitalWrite(5,0);    
+    digitalWrite(6,1);    
+    digitalWrite(7,1);    
+    digitalWrite(8,0);    
+    digitalWrite(9,0);    
+    digitalWrite(10,1);    
+    digitalWrite(11,1);   
+  
+   
+    delay (temps1);
+  
+    digitalWrite(5,1);    
+    digitalWrite(6,0);    
+    digitalWrite(7,1);    
+    digitalWrite(8,1);    
+    digitalWrite(9,0);    
+    digitalWrite(10,1);    
+    digitalWrite(11,1);   
+  
+    
+    delay (temps1);
+  
+    digitalWrite(5,0);    
+    digitalWrite(6,0);    
+    digitalWrite(7,1);    
+    digitalWrite(8,1);    
+    digitalWrite(9,1);    
+    digitalWrite(10,1);    
+    digitalWrite(11,1);   
+  
+    
+  
+    delay (temps1);
+  
+    digitalWrite(5,1);    
+    digitalWrite(6,1);    
+    digitalWrite(7,1);    
+    digitalWrite(8,0);    
+    digitalWrite(9,0);    
+    digitalWrite(10,0);    
+    digitalWrite(11,0);   
+  
+  
+    
+    delay (temps1);
+  
+    digitalWrite(5,1);    
+    digitalWrite(6,1);    
+    digitalWrite(7,1);    
+    digitalWrite(8,1);    
+    digitalWrite(9,1);    
+    digitalWrite(10,1);    
+    digitalWrite(11,1);   
+  
+    
+  
+    delay (temps1);
+  
+    digitalWrite(5,1);    
+    digitalWrite(6,1);    
+    digitalWrite(7,1);    
+    digitalWrite(8,0);    
+    digitalWrite(9,0);    
+    digitalWrite(10,1);    
+    digitalWrite(11,1);   
+  
    
   
+    delay (temps1);
   }   
+  else
+  {
+    digitalWrite(5,1);    
+    digitalWrite(6,1);    
+    digitalWrite(7,1);    
+    digitalWrite(8,1);    
+    digitalWrite(9,1);    
+    digitalWrite(10,1);    
+    digitalWrite(11,1);
+  }
+}   
 //********** Funcions *************************************************************
